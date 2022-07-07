@@ -1,4 +1,5 @@
-public class CalculatorHomework {
+package mavenTestNGHomework;
+public class Calculator {
     int result;
 
     //Method for addition
