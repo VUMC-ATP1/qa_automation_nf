@@ -4,10 +4,12 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.Method;
+
 public class CalculatorTest {
     @BeforeMethod
-    public void MethodTestingStarted() {
-        System.out.println("The method testing started");
+    public void MethodTestingStarted(Method method) {
+        System.out.println("The '" + method.getName() + "' testing started");
     }
 
     @Test
